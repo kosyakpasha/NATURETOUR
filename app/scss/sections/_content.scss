@@ -1,0 +1,351 @@
+body{
+    font: 400 16px/1.1 Arial, Helvetica, sans-serif;
+    background: url(../img/bg.jpg) repeat;
+    background-size: contain;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+*{
+    box-sizing: border-box;
+    outline: 0;	
+}
+a{text-decoration: none}
+.container{
+	width: 990px;
+	margin: 0 auto;
+}
+
+/////////////  variables //////////////
+
+$black : #231f20;
+$grey : #8c8d8f;
+$green : #2da034;
+$white: #ffffff;
+
+/////////////  variables //////////////
+
+/////////////   sprite  //////////////
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-aside-select-list-button {
+    width: 20px;
+    height: 40px;
+    background-position: -30px -5px;
+}
+
+.sprite-contacts {
+    width: 18px;
+    height: 14px;
+    background-position: -60px -5px;
+}
+
+.sprite-logo {
+    width: 56px;
+    height: 65px;
+    background-position: -88px -5px;
+}
+
+.sprite-photographer {
+    width: 187px;
+    height: 133px;
+    background-position: -154px -5px;
+}
+
+.sprite-twitter {
+    width: 25px;
+    height: 16px;
+    background-position: -351px -5px;
+}
+
+/////////////   sprite  //////////////
+
+////////////// main page ///////////////
+
+.main{
+	margin-bottom: 21px;
+	flex: 1;
+}
+.main-title{
+	font-family: Arial;
+    font-size: 0.9em;
+    font-stretch: extra-condensed;
+    padding: 5px 24px;
+}
+.main-title-link{
+	color: $green;
+}
+.main-contant{
+	background: $white;
+    width: 75%;
+    height: 100%;
+    display: inline-block;
+    padding: 20px 18px 6px;
+}
+
+/////////////  main slider //////////////
+
+.slider-text-link{
+	font-family: Arial;
+    font-size: 0.9em;
+    font-stretch: extra-condensed;
+    &:hover{
+    	text-decoration: underline;
+    }
+}
+.slider-text-subtitle,
+.slider-text-link{
+	color: $green;
+}
+.main-slider-img-block{
+	position: relative;
+}
+.main-slider-img{
+	width: 100%;
+}
+.main-slider-text{
+	font-family: 'Zurich__Condensed_BT';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34%;
+    background: rgba(51, 44, 37, 0.8);
+    padding: 19px;
+    color: #fff;
+	height: 100%;
+}
+.slider-text-title{
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.slider-text-subtitle{
+	font-size: 2em;
+    margin-bottom: 12px;
+    display: block;
+}
+.slider-text-info{
+	font-family: Arial;
+    font-size: 0.9em;
+    font-stretch: extra-condensed;
+    line-height: 18px;
+}
+.slick-next,
+.slick-prev{
+	display: none !important;
+}
+li.slick-active button:before,
+.slick-dots li button:before{
+	content: '';
+}
+.slick-dots li{
+	z-index: 1;
+	color: #c1c0c0;
+	margin: 0 6px;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -1px;
+		width: 22px;
+		height: 22px;
+		background: $grey;
+		border-radius: 50%;
+		z-index: -1;
+	}	
+}
+li.slick-active{
+	position: relative;
+	z-index: 1;
+	&:after{
+		content: '';
+		position: absolute;
+		top: -2px;
+		left: -3px;
+		width: 26px;
+		height: 26px;
+		background: linear-gradient(to bottom, #81de41 0%, #49b232 31%, #26a024 67%, #0f941a 100%);
+		border-radius: 50%;
+		z-index: -1;
+	}
+}
+.slick-dots li button{
+	font-size: 0.7em;
+	color: $white;
+}
+.slick-dots{
+    bottom: 27px;
+    display: inline-block;
+    width: auto;
+    right: 96px;
+}
+.slick-slide img{
+	border-radius: 10px;
+}
+.main-slider-text{
+	border-radius: 0 10px 10px 0;
+}
+.main-slider-item{
+	position: relative;
+}
+.slick-dotted.slick-slider{
+	margin-bottom: 25px;
+}
+
+/////////////  main slider //////////////
+
+
+/////////////   main text  //////////////
+
+.container-main{
+	background: #FFF;
+}
+.main-text-title{
+	font-family: 'Zurich__Condensed_BT';
+	text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+.main-text-info{
+    font-family: Arial;
+    font-size: 0.9em;
+    font-stretch: extra-condensed;
+    width: 62%;
+    line-height: 20px;
+}
+.main-text-info-link{
+	color: $green;
+	text-decoration: underline;
+    font-weight: 800;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.main-text{
+	padding-bottom: 17px;
+	position: relative;
+}
+.main-text-img{
+	position: absolute;
+	bottom: 0;
+    right: 48px;
+}
+
+/////////////   main text  //////////////
+
+
+/////////////   main text  //////////////
+
+#main-list{
+	ul{
+		li{
+			&:first-child{
+				border-radius: 5px 0 0 5px;
+			}
+			&:last-child{
+				border-radius: 0 5px 5px 0;
+			}
+		}
+	}
+}
+.main-list-titles{
+	font-size: 0;
+    margin-bottom: 22px;
+}
+.main-list-title{
+	width: 33%;
+	display: inline-block;
+	font-family: 'Zurich__Condensed_BT';
+    font-size: 17px;
+	a{
+		color: $white;
+	}
+}
+.ui-tabs-tab{
+	position: relative;
+	border: 1px solid #cfcdc5;
+	text-align: center;
+	a{
+		color: #000;
+		padding: 10px 0;
+		display: inline-block;
+		width: 100%;
+	}
+}
+.tab-arrow{
+	position: relative;
+	&:before{
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: -10px;
+		transform: translateY(-50%);
+		border: 4px solid transparent;
+		border-left: 6px solid green;
+	}
+}
+.ui-tabs-active{
+	border: 1px solid #0c932f;
+	position: relative;
+	background: linear-gradient(to bottom, #81de41 0%, #49b232 31%, #26a024 67%, #0f941a 100%);
+	a{
+		color: $white;
+	}
+	&:after{
+		position: absolute;
+		content: '';
+		left: 50%;
+		top: 100%;
+		transform: translateX(-50%);
+		border: 4px solid transparent;
+		border-top: 6px solid #11951b;
+	}
+	.tab-arrow{
+		&:before{
+			display: none;
+		}
+	}
+}
+.info-item-title{
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 0.8em;
+    letter-spacing: -0.3px;
+    margin-bottom: 7px;
+}
+.info-item-text{
+	font-family: Arial;
+    font-size: 0.9em;
+    font-stretch: extra-condensed;
+    line-height: 18px;
+}
+.main-list-info-item{
+	display: inline-block;
+    width: 31%;
+    color: #000;
+    margin-right: 19px;
+    vertical-align: top;
+	&:nth-child(3n){
+		margin-right: 0;
+	}
+}
+.info-item-img{
+    border: 4px solid #e9e6df;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+/////////////   main text  //////////////
+
+//////////////  main page  //////////////

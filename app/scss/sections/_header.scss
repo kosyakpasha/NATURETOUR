@@ -1,0 +1,103 @@
+.header{
+    flex: 1;
+}
+.header-container{
+    padding: 0 5px;
+}
+.header-top{
+	padding-top: 17px;
+}
+.header-top-left{
+    display: inline-block;
+    margin-left: 25px;
+}
+.logo{
+	display: inline-block;
+    position: relative;
+}
+.logo-name{
+	font-family: 'Klavika Medium Plain';
+    text-transform: uppercase;
+	color: $black;
+    font-size: 2.1em;
+}
+.logo-surname{
+	font-family: 'Myriad Pro Semibold';
+	color: $grey;
+	text-transform: uppercase;
+    font-size: 0.6em;
+    letter-spacing: 2.3px;
+    margin-left: 4px;
+}
+.logo-img{
+	position: absolute;
+	left: 0;
+    top: 5px;
+}
+.logo-text{
+    padding: 15px 0 0 30px;
+}
+.header-top-right{
+   	float: right;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+.header-top-message{
+	font-family: 'Myriad Pro Regular';
+    display: block;
+    font-size: 0.7em;
+    letter-spacing: 0.3px;
+}
+.header-top-phone{
+	font-family: 'Myriad Pro Regular';
+    font-size: 1.25em;
+    display: block;
+}
+.header-top-nav{
+    font-family: 'Zurich__Condensed_BT';
+    text-transform: uppercase;
+    margin-top: 18px;
+    font-size: 0.8em;
+}
+.header-top-nav-link{
+	color: $green;
+	padding: 9px;
+    border-radius: 5px;
+    font-family: 'Zurich__Condensed_BT';
+    font-weight: 800;
+    &:hover{
+    	color: $white;
+    	background: #81de41; /* Old browsers */
+		background: linear-gradient(to bottom,  #81de41 0%,#49b232 31%,#26a024 67%,#0f941a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		transition: all 0.1s ease-out;
+    }
+}
+.header-bottom{
+    margin: 32px 0px 10px;
+}
+.header-bottom-nav{
+	border: 1px solid #0c932f;
+    border-radius: 5px;
+	background: #81de41; /* Old browsers */
+	background: linear-gradient(to bottom,  #81de41 0%,#49b232 31%,#26a024 67%,#0f941a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.header-bottom-nav-link{
+    font-size: 0.9em;
+    padding: 11px;
+    letter-spacing: 1px;
+	font-family: 'Zurich__Condensed_BT';
+    font-weight: 800;
+	color: $white;
+	&:hover{
+        color: black;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+	}
+}
+.animenu__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
